@@ -18,3 +18,6 @@ productos.end(),
 
 compararProductos);
 
+# Caso de prueba
+
+El caso de prueba es el archivo txt llamado: "articulos_gaming". Este contiene la lista de 100 articulos con su numero de ventas.
