@@ -11,17 +11,17 @@ struct Producto {
     std::string nombre;
 };
 
-
+//compara las ventas de los productos
 bool compararProductos(const Producto& a, const Producto& b) {
     return a.ventas > b.ventas;
 }
 
-
+//implementación de std::sort de la biblioteca de c++
 void ordenar(std::vector<Producto>& productos) {
-    std::sort(productos.begin(), productos.end(), compararProductos);
+    std::sort(productos.begin(), productos.end(), compararProductos); 
 }
 
-
+//imprime los numeros que indican el lugar del producto segun su numero de ventas
 void imprimirConNumeros(const std::vector<Producto>& productos) {
     for (int i = 0; i < productos.size(); ++i) {
         std::cout << i+1 << " ventas: " << productos[i].ventas << " Nombre: " << productos[i].nombre << std::endl;
@@ -30,7 +30,7 @@ void imprimirConNumeros(const std::vector<Producto>& productos) {
 
 
 
-
+//modifica el numero de ventas de los productos
 void modificar(std::vector<Producto>& productos, int lugar, int nuevasVentas) {
     if (lugar > 0 && lugar <= productos.size()) {
         productos[lugar - 1].ventas = nuevasVentas;
@@ -41,4 +41,5 @@ void modificar(std::vector<Producto>& productos, int lugar, int nuevasVentas) {
 
 
 #endif 
+
 
