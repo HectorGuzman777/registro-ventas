@@ -13,6 +13,8 @@ El codigo utiliza "std::sort" de la biblioteca de c++. Este se basa en el algori
 Vista en el codigo: 
 
 std::sort(productos.begin(),
+
 productos.end(),
+
 compararProductos);
 
