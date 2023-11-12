@@ -21,3 +21,21 @@ compararProductos);
 # Caso de prueba
 
 El caso de prueba es el archivo txt llamado: "articulos_gaming". Este contiene la lista de 100 articulos con su numero de ventas.
+
+# Análisis de complejidad
+
+Lectura y creacion de archivos: Se recorre cada linea del archivo 1 vez. o(n)
+
+Ordenar productos por ventas (sort): std::sort utiliza un algoritmo de ordenación rápida. o(n log n)
+
+imprimir lista: se recorren los productos 1 vez. o(n)
+
+Modificar numero de ventas: se accede a un elemento especifico y se modifica. o(1)
+
+ordenar productos despues de la modificación (sort): utiliza std::sort. o(n log n)
+
+Imprimir lista despues de la modificación: o(n)
+
+Escribir productos en un nuevo txt: se recorren todos los productos 1 vez. o(n)
+
+omplejidad dominante: O (n log n) Esto se debe al algoritmo de ordenamiento utilizado y tambien al tamaño de lo que se está ordenando por lo que es una buena complejidad.
