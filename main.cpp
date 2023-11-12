@@ -37,12 +37,12 @@ int main() {
 
     // Solicita al usuario que introduzca el artículo que desea modificar
     int lugar;
-    std::cout << "Introduce el número del artículo que deseas modificar: ";
+    std::cout << "Introduce el numero del articulo que deseas modificar: ";
     std::cin >> lugar;
 
     // Solicita al usuario que introduzca el nuevo número de ventas
     int nuevasVentas;
-    std::cout << "Introduce el nuevo número de ventas: ";
+    std::cout << "Introduce el nuevo numero de ventas: ";
     std::cin >> nuevasVentas;
 
     // Modifica el número de ventas del artículo
