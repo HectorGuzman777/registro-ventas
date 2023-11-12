@@ -17,11 +17,10 @@ int main() {
     int ventas;
     std::vector<Producto> productos;
 
-  
     while (std::getline(archivo, nombre, '-')) {
         if (!(archivo >> ventas)) {
             break;
-        }
+        } //Implementacion para poder leer el txt correctamente
         archivo.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
 
         Producto p;
@@ -55,7 +54,11 @@ int main() {
     // Imprime la lista de productos después de la modificación
     imprimirConNumeros(productos);
 
+    // Escribe los productos modificados en un nuevo archivo
+    escribirProductos(productos);
+
     archivo.close();
 
     return 0;
 }
+
