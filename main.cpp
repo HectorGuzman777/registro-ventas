@@ -6,7 +6,7 @@
 
 int main() {
     // Abre el archivo para lectura
-    std::ifstream archivo("articulos_gaming.txt");
+    std::ifstream archivo("articulos_gaming.txt"); //complejidad: o(n)
 
     if (!archivo.is_open()) {
         std::cerr << "No se pudo abrir el archivo." << std::endl;
@@ -33,29 +33,29 @@ int main() {
     ordenar(productos);
 
     // Imprime la lista de productos
-    imprimirConNumeros(productos);
+    imprimirConNumeros(productos); //complejidad: o(n)
 
     // Solicita al usuario que introduzca el artículo que desea modificar
     int lugar;
-    std::cout << "Introduce el numero del articulo que deseas modificar: ";
+    std::cout << "Introduce el número del artículo que deseas modificar: ";
     std::cin >> lugar;
 
     // Solicita al usuario que introduzca el nuevo número de ventas
     int nuevasVentas;
-    std::cout << "Introduce el nuevo numero de ventas: ";
+    std::cout << "Introduce el nuevo número de ventas: ";
     std::cin >> nuevasVentas;
 
     // Modifica el número de ventas del artículo
-    modificar(productos, lugar, nuevasVentas);
+    modificar(productos, lugar, nuevasVentas); //complejidad: o(1)
 
     // Ordena los productos por ventas después de la modificación
     ordenar(productos);
 
     // Imprime la lista de productos después de la modificación
-    imprimirConNumeros(productos);
+    imprimirConNumeros(productos); //complejidad: o(n)
 
     // Escribe los productos modificados en un nuevo archivo
-    escribirProductos(productos);
+    escribirProductos(productos); //complejidad: o(n)
 
     archivo.close();
 
