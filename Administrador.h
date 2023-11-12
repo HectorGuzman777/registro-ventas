@@ -16,8 +16,8 @@ bool compararProductos(const Producto& a, const Producto& b) {
     return a.ventas > b.ventas;
 }
 //ordena los prodecutos de mayor a menor utilizando la funcion std::sort de la libreria de c++
-void ordenar(std::vector<Producto>& productos) {
-    std::sort(productos.begin(), productos.end(), compararProductos); 
+void ordenar(std::vector<Producto>& productos) { //complejidad: o(n)
+    std::sort(productos.begin(), productos.end(), compararProductos); //complejidad: o(n log n)
 }
 //funcion para darle formato
 void imprimirConNumeros(const std::vector<Producto>& productos) {
@@ -26,7 +26,7 @@ void imprimirConNumeros(const std::vector<Producto>& productos) {
     }
 }
 //modifica la lista segun el numero de ventas que haya cambiado el usuario
-void modificar(std::vector<Producto>& productos, int lugar, int nuevasVentas) {
+void modificar(std::vector<Producto>& productos, int lugar, int nuevasVentas) { //complejidad: o(n log n)
     if (lugar > 0 && lugar <= productos.size()) {
         productos[lugar - 1].ventas = nuevasVentas;
     } else {
