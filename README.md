@@ -4,7 +4,7 @@ El programa consta de un registro en el que se verán distintos productos ordena
 
 # Acciones-del-usuario
 
-El usuario podrá ver las ventas de los prodcutos, sera un reporte de ventas diarias por lo que el usuario podrá modificar el número de ventas del producto que desse. Cuando se realize esta acción el programa desplegará la lista actualizada con los nuevos datos de ventas
+El usuario podrá ver las ventas de los prodcutos, sera un reporte de ventas diarias por lo que el usuario podrá modificar el número de ventas del producto que desee. Cuando se realize esta acción el programa desplegará la lista actualizada con los nuevos datos de ventas y tambien creará un nuevo txt con estas modificaciones.
 
 # Sort
 
