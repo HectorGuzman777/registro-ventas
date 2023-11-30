@@ -46,7 +46,23 @@ void escribirProductos(const std::vector<Producto>& productos) {
     archivo.close();
 }
 
+void agregar(std::vector<Producto>& productos, const std::string& nombre, int ventas) {
+    Producto p;
+    p.nombre = nombre;
+    p.ventas = ventas;
+    productos.push_back(p);
+}
+
+void eliminar(std::vector<Producto>& productos, int lugar) {
+    if (lugar > 0 && lugar <= productos.size()) {
+        productos.erase(productos.begin() + lugar - 1);
+    } else {
+        std::cout << "Lugar no válido." << std::endl;
+    }
+}
+
 #endif
+
 
 
 
