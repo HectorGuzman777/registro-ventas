@@ -62,38 +62,29 @@ omplejidad dominante: O (n log n) Esto se debe al algoritmo de ordenamiento util
 
 # Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente.
 
-
-
-# Sort
-
 El codigo utiliza "std::sort" de la biblioteca de c++. Este se basa en el algoritmo de ordenamiento de ontrospección que es una variante del QuickSort, con una fase de ordenamiento por insercón (insertion sort) y una fase de ordenamiento por montículos (heapsort) para un mejor rendimiento. Se utiliza dentro de la función "compararProductos"
 
 Vista en el codigo: 
 
-std::sort(productos.begin(),
+std::sort(productos.begin(), productos.end(), compararProductos);
 
-productos.end(),
+# Selecciona una estructura de datos adecuada al problema y lo usa correctamente.
 
-compararProductos);
+Se utiliza la estrucutra de datos "std::vector", es una matriz dinámica proporcionada por la biblioteca estandar de c++. El codigo lo usa en la estructura Producto para almacenar la lista de productos.
 
-# Caso de prueba
+Vista en el codigo: 
 
-El caso de prueba es el archivo txt llamado: "articulos_gaming". Este contiene la lista de 100 articulos con su numero de ventas.
+void ordenar(std::vector<Producto>& productos) {
 
-# Análisis de complejidad
+# SICT0303 Implementa acciones científicas
 
-Lectura y creacion de archivos: Se recorre cada linea del archivo 1 vez. o(n)
+# Implementa mecanismos para consultar información de las estructras correctos
 
-Ordenar productos por ventas (sort): std::sort utiliza un algoritmo de ordenación rápida. o(n log n)
+Acceso directo a elementos: Se puede acceder a cualquier elemento del vector utilizando corchetes [] "productos [i]" esto dará el producto en la posición i.
 
-imprimir lista: se recorren los productos 1 vez. o(n)
+Iteración: recorre todos los elementos del vector utilizando un bucle "for". "for (auto& producto : productos)" recorre todos los productos en el vector.
 
-Modificar numero de ventas: se accede a un elemento especifico y se modifica. o(1)
+Tamaño del vector: se tiene el numero de elementos en el vector utilizando la función "size()". vista en el codigo: "productos.size()". Esto dará el numero de productos en el vector.
 
-ordenar productos despues de la modificación (sort): utiliza std::sort. o(n log n)
+Verificación de vacio: verifica si el vector está vacío con la función: "empty()". Vista en el codigo: "productos.empty()". Aqui devolvera "true" si el vector esta vacío y en caso de no estar vacío se devolvera "false".
 
-Imprimir lista despues de la modificación: o(n)
-
-Escribir productos en un nuevo txt: se recorren todos los productos 1 vez. o(n)
-
-omplejidad dominante: O (n log n) Esto se debe al algoritmo de ordenamiento utilizado y tambien al tamaño de lo que se está ordenando por lo que es una buena complejidad.
