@@ -14,7 +14,7 @@ El programa consta de un registro en el que se verán distintos productos ordena
   
   e. salir: guarda los cambios realizados y termina el programa.
 
-2. Una vez que se termine el programa este creará un nuevo archivo de texto con todas la modificaciones realizadas.
+2. Una vez que se termine el programa este creará un nuevo archivo de texto (articulos_modificados.txt) con todas la modificaciones realizadas.
 
 
 # Sort
