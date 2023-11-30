@@ -1,3 +1,9 @@
+/*
+*  autor: Héctor Gúmaro Guzmán Reyes
+*  fecha: 30/Nov/2023
+*  programa: proyecto final Estructura de datos
+*  desc: Control de ventas de una tienda de articulos de videojuegos
+*/
 #include <iostream>
 #include <fstream>
 #include <string>
