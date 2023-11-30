@@ -1,22 +1,21 @@
 # registro de ventas Cool-Gaming
 
-El programa consta de un registro en el que se verán distintos productos ordenados desde el mas venido hasta el menos venido. El usuario podrá hacer modificaciones a su gusto como cambiar las ventas, agregar productos o eliminar productos. Una vez que el usuario haya terminado de modificar la lista esta se guardará y creará un nuevo txt con las modificaciones realizadas. Ejemplo de uso:
+El programa consta de un registro en el que se verán distintos productos ordenados desde el mas venido hasta el menos venido. El usuario podrá hacer modificaciones a su gusto como cambiar las ventas, agregar productos o eliminar productos. Una vez que el usuario haya terminado de modificar la lista esta se guardará y creará un nuevo txt con las modificaciones realizadas. El objetivo de este programa es llevar un registro de ventas para poder determinar cual es el producto que mas se vende y el que menos se vende, de esta forma la tienda podrá tomar acciones para no hacer gastos inecesarios en productos que no se venden y tambien podrán saber cual es el que conviene pedir mas para su venta. Ejemplo de uso:
 
-1. El programa desplegará un menu en el que habran 5 opciones
+1. El programa desplegará un menu en el que habran 5 opciones:
    
-  a. ver lista de productos
+  a. ver lista de productos: despliega la lista de todos los productos ordenados de mayor numero de ventas al menor
   
-  b. modificar ventas
+  b. modificar ventas: se le pedira al usuario escribir el numero de posición en la que se encuentra el producto que se desea modificar, posteriormente el programa solicitará el nuevo numero de ventas. Una vez concluido este proceso la lista se actualizará y se reordenará de acuerdo a los cambios realizados.
   
-  c. agregar producto
+  c. agregar producto: se le pedirá al usuario escrbir el nombre de un nuevo producto que se desea agregar (EL NOMBRE DEL PRODUCTO DEBE DE IR SIN ESPACION Y SIN CARACTERES ESPECIALES, DE LO CONTRARIO EL PROGRAMA TRONARIA), depues de haber agregado el nombre del producto se pedirá el número de ventas de ese producto. Una vez hecho esto la lista se actualizará agregando el nuevo producto y ordenandolo de acuerdo a su numero de ventas.
   
-  d. eliminar producto
+  d. eliminar producto: el programa pedirá al usuario ingresar el numero de posición en el que se encuentra el producto deseado, posteriormente la lista se actualizará y se reordenará con base a la eliminación del producto.
   
-  e. salir
+  e. salir: guarda los cambios realizados y termina el programa.
 
-# Acciones-del-usuario
+2. Una vez que se termine el programa este creará un nuevo archivo de texto con todas la modificaciones realizadas.
 
-El usuario podrá ver las ventas de los prodcutos, sera un reporte de ventas diarias por lo que el usuario podrá modificar el número de ventas del producto que desee. Cuando se realize esta acción el programa desplegará la lista actualizada con los nuevos datos de ventas y tambien creará un nuevo txt con estas modificaciones.
 
 # Sort
 
