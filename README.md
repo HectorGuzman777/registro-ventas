@@ -20,6 +20,48 @@ El programa consta de un registro en el que se verán distintos productos (los p
 
 # Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa.
 
+El codigo utiliza un algortimo de ordenamineto de la biblioteca ed estandar de c++: std::sort. Su complejidad es de O(n log n). n es el número de elementos que se estan ordenando
+
+# Hace un análisis de complejidad correcto y completo todas las estructuras de datos y cada uno de sus usos en el programa
+
+principal estructura de datos utilizada:
+
+std::vector
+
+Análisis de complejidad de las operaciones realizadas en la estructura:
+
+Inserción (push_back): su complejidad es de O(1), en caso de que el vector necesite redimensionarse, la complejidad de tiempo seria de O(n) en el peor de los casos, esto se debe a que todos los elementos existentes tendrían que ser copiados a un nuevo bloque de memoria.
+
+Acceso (operator[]): La complejidad es de O(1). Se puede acceder a cualquier elemento del vector en tiempo constante
+
+Eliminación (erase): la complejidad es de O(n), esto se debe a que puede requerir desplazar todos los elementos despues del elemento eliminado.
+
+# Hace un análisis de complejidad correcto y completo para todos los demás componentes del programa y determina la complejidad final del programa.
+
+Lectura y creacion de archivos: Se recorre cada linea del archivo 1 vez. o(n)
+
+Ordenar productos por ventas (sort): std::sort utiliza un algoritmo de ordenación rápida. o(n log n)
+
+imprimir lista: se recorren los productos 1 vez. o(n)
+
+Modificar numero de ventas: se accede a un elemento especifico y se modifica. o(1)
+
+Adición de un nuevo producto (modificar): su complejidad es de O(1), debido a que accede y modifica un elemento en una posición especifica
+
+Eliminación de un prodcuto (eliminar): la complejidad es de O(n), debido a que se requiere desplazar los elementos restantes del elemento eliminado
+
+ordenar productos despues de la modificación (sort): utiliza std::sort. o(n log n)
+
+Imprimir lista despues de la modificación: o(n)
+
+Escribir productos en un nuevo txt: se recorren todos los productos 1 vez. o(n)
+
+omplejidad dominante: O (n log n) Esto se debe al algoritmo de ordenamiento utilizado y tambien al tamaño de lo que se está ordenando por lo que es una buena complejidad.
+
+# SICT0302 Toma decisiones 
+
+# Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente.
+
 
 
 # Sort
