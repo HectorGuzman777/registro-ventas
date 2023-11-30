@@ -16,6 +16,11 @@ El programa consta de un registro en el que se verán distintos productos (los p
 
 2. Una vez que se termine el programa este creará un nuevo archivo de texto (articulos_modificados.txt) con todas la modificaciones realizadas.
 
+# SICT0301: Evalúa los componentes
+
+# Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa.
+
+
 
 # Sort
 
