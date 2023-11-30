@@ -5,9 +5,7 @@
 #include "administrador.h"
 
 int main() {
-    // Abre el archivo para lectura
-    std::ifstream archivo("articulos_gaming.txt"); //complejidad: o(n)
-
+    std::ifstream archivo("articulos_gaming.txt");
     if (!archivo.is_open()) {
         std::cerr << "No se pudo abrir el archivo." << std::endl;
         return 1;
@@ -20,7 +18,7 @@ int main() {
     while (std::getline(archivo, nombre, '-')) {
         if (!(archivo >> ventas)) {
             break;
-        } //Implementacion para poder leer el txt correctamente
+        }
         archivo.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
 
         Producto p;
@@ -29,33 +27,64 @@ int main() {
         productos.push_back(p);
     }
 
-    // Ordena los productos por ventas
     ordenar(productos);
 
-    // Imprime la lista de productos
-    imprimirConNumeros(productos); //complejidad: o(n)
+    int opcion;
+    do {
+    	std::cout << "Registro de ventas Cool-Gaming";
+        std::cout << "\nElige una opcion:\n1. Ver lista de productos\n2. Modificar ventas\n3. Agregar producto\n4. Eliminar producto\n5. Salir\n";
+        std::cin >> opcion;
 
-    // Solicita al usuario que introduzca el artículo que desea modificar
-    int lugar;
-    std::cout << "Introduce el número del artículo que deseas modificar: ";
-    std::cin >> lugar;
+        switch (opcion) {
+            case 1:
+                imprimirConNumeros(productos);
+                break;
+            case 2: {
+                int lugar;
+                std::cout << "Introduce el numero del articulo que deseas modificar: ";
+                std::cin >> lugar;
 
-    // Solicita al usuario que introduzca el nuevo número de ventas
-    int nuevasVentas;
-    std::cout << "Introduce el nuevo número de ventas: ";
-    std::cin >> nuevasVentas;
+                int nuevasVentas;
+                std::cout << "Introduce el nuevo numero de ventas: ";
+                std::cin >> nuevasVentas;
 
-    // Modifica el número de ventas del artículo
-    modificar(productos, lugar, nuevasVentas); //complejidad: o(1)
+                modificar(productos, lugar, nuevasVentas);
+                break;
+            }
+            case 3: {
+                std::string nuevoNombre;
+                int nuevasVentas;
+                std::cout << "Introduce el nombre del nuevo producto: ";
+                std::cin >> nuevoNombre;
+                std::cout << "Introduce el numero de ventas del nuevo producto: ";
+                std::cin >> nuevasVentas;
 
-    // Ordena los productos por ventas después de la modificación
-    ordenar(productos);
+                agregar(productos, nuevoNombre, nuevasVentas);
+                break;
+            }
+            case 4: {
+                int lugar;
+                std::cout << "Introduce el numero del articulo que deseas eliminar: ";
+                std::cin >> lugar;
 
-    // Imprime la lista de productos después de la modificación
-    imprimirConNumeros(productos); //complejidad: o(n)
+                eliminar(productos, lugar);
+                break;
+            }
+            case 5:
+                std::cout << "Saliendo del programa...\n";
+                break;
+            default:
+                std::cout << "Opcion no válida.\n";
+                break;
+        }
 
-    // Escribe los productos modificados en un nuevo archivo
-    escribirProductos(productos); //complejidad: o(n)
+        if (opcion != 1 && opcion != 5) {
+            ordenar(productos);
+            imprimirConNumeros(productos);
+        }
+    } while (opcion != 5);
+
+    escribirProductos(productos);
 
     archivo.close();
 
