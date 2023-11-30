@@ -88,3 +88,22 @@ Tamaño del vector: se tiene el numero de elementos en el vector utilizando la f
 
 Verificación de vacio: verifica si el vector está vacío con la función: "empty()". Vista en el codigo: "productos.empty()". Aqui devolvera "true" si el vector esta vacío y en caso de no estar vacío se devolvera "false".
 
+# Implementa mecanismos de lectura de archivos para cargar datos a las estructuras de manera correcta
+
+Apertura de achivo: se utiliza "std::ifstream" para abrir el archivo de texto en modo lectura.
+
+lectura de lineas: el codigo usa "std::getline" para leer cada linea del archivo.
+
+Conversión de datos: se utiliza ">>" para convertir la parte de ventas de cada linea en entero
+
+ignorar caractres: se utiliza "std::ifstream::ignore" para ignorar el resto de la linea después de leer las ventas
+
+cierre del archivo: se utiliza "std::ifstream::close" para cerrar el archivo después de leer los datos
+
+# Implementa mecanismos de escritura de archivos para guardar los datos  de las estructuras de manera correcta
+
+Apertura del archivo: se utiliza "std::ofstream" para abrir el nuevo archivo de texto qu se va a generar
+
+Estructura de lineas: se tuliza el operador "<<" para escribir cada producto en el archivo
+
+cierre del archivo: se utiliza "std::ofstream:close" para cerrar el archivo despues de haber escrito los datos
