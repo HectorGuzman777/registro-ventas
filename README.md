@@ -3,10 +3,15 @@
 El programa consta de un registro en el que se verán distintos productos ordenados desde el mas venido hasta el menos venido. El usuario podrá hacer modificaciones a su gusto como cambiar las ventas, agregar productos o eliminar productos. Una vez que el usuario haya terminado de modificar la lista esta se guardará y creará un nuevo txt con las modificaciones realizadas. Ejemplo de uso:
 
 1. El programa desplegará un menu en el que habran 5 opciones
+   
   a. ver lista de productos
+  
   b. modificar ventas
+  
   c. agregar producto
+  
   d. eliminar producto
+  
   e. salir
 
 # Acciones-del-usuario
