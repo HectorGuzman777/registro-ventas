@@ -1,6 +1,13 @@
-# registro-ventas-PC
+# registro de ventas Cool-Gaming
 
-El programa consta de un registro en el que se verán distintos productos ordenados desde el mas venido hasta el menos venido.
+El programa consta de un registro en el que se verán distintos productos ordenados desde el mas venido hasta el menos venido. El usuario podrá hacer modificaciones a su gusto como cambiar las ventas, agregar productos o eliminar productos. Una vez que el usuario haya terminado de modificar la lista esta se guardará y creará un nuevo txt con las modificaciones realizadas. Ejemplo de uso:
+
+1. El programa desplegará un menu en el que habran 5 opciones
+  1. ver lista de productos
+  2. modificar ventas
+  3. agregar producto
+  4. eliminar producto
+  5. salir
 
 # Acciones-del-usuario
 
